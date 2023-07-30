@@ -1,0 +1,29 @@
+
+
+.author_box{
+    width: 80%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 6rem;
+
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 35em) {
+    .author_box{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .author_box{
+        width: 90%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
